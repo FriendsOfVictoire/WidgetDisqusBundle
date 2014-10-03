@@ -1,0 +1,24 @@
+{
+    "name": "victoire/disqus-widget",
+    "type": "symfony-bundle",
+    "description": "Victoire Cms Disqus widget",
+    "keywords": ["cms", "victoire", "Disqus", "widget"],
+    "homepage": "http://appventus.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul Andrieux",
+            "email": "paul@appventus.com"
+        }
+    ],
+    "require": {
+        "php"                      : ">=5.3.3",
+        "symfony/framework-bundle" : "~2.3",
+        "victoire/victoire"        : "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "Victoire\\Widget\\DisqusBundle": "" }
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Victoire/Widget/DisqusBundle"
+}
