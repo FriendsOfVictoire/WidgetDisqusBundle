@@ -1,5 +1,5 @@
 {
-    "name": "victoire/disqus-widget",
+    "name": "appventus/disqus-widget",
     "type": "symfony-bundle",
     "description": "Victoire Cms Disqus widget",
     "keywords": ["cms", "victoire", "Disqus", "widget"],
