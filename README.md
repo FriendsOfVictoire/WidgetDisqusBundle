@@ -1,7 +1,7 @@
-Victoire CMS Disqus Bundle
+Victoire  Disqus Bundle
 ============
 
-Need to add a disqus in a victoire cms website ?
+Need to add a disqus in a victoire website ?
 Get this disqus bundle and so on
 
 First you need to have a valid Symfony2 Victoire edition.
