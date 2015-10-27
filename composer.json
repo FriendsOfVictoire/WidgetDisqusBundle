@@ -2,13 +2,13 @@
     "name": "friendsofvictoire/disqus-widget",
     "type": "symfony-bundle",
     "description": "Victoire Cms Disqus widget",
-    "keywords": ["cms", "victoire", "Disqus", "widget"],
-    "homepage": "http://appventus.com",
+    "keywords": ["DCMS", "Victoire", "widget", "FriendsofVictoire", "Dynamic", "CMS", "Disqus"],
+    "homepage": "http://victoire.io",
     "license": "MIT",
     "authors": [
         {
             "name": "Paul Andrieux",
-            "email": "paul@appventus.com"
+            "email": "paul@victoire.io"
         }
     ],
     "require": {

@@ -1,13 +1,18 @@
-Victoire  Disqus Bundle
+Victoire DCMS Disqus Bundle
 ============
+##What is the purpose of this bundle
 
-Need to add a disqus in a victoire website ?
-Get this disqus bundle and so on
+This bundles gives you access to the *Disqus Widget* which set up the Disqus discussion platform.
 
-First you need to have a valid Symfony2 Victoire edition.
-Then you just have to run the following composer command :
+##Set Up Victoire
+
+If you haven't already, you can follow the steps to set up Victoire *[here](https://github.com/Victoire/victoire/blob/master/setup.md)*
+
+##Install the bundle
 
     php composer.phar require friendsofvictoire/disqus-widget
+
+###Reminder
 
 Do not forget to add the bundle in your AppKernel !
 
