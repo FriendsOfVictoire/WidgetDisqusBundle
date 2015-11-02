@@ -8,13 +8,13 @@ use Victoire\Bundle\CoreBundle\Form\WidgetType;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
- * WidgetDisqus form type
+ * WidgetDisqus form type.
  */
 class WidgetDisqusType extends WidgetType
 {
-
     /**
-     * define form fields
+     * define form fields.
+     *
      * @param FormBuilderInterface $builder
      * @param array                $options
      */
@@ -32,22 +32,23 @@ class WidgetDisqusType extends WidgetType
     }
 
     /**
-     * bind form to WidgetDisqus entity
+     * bind form to WidgetDisqus entity.
+     *
      * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         parent::setDefaultOptions($resolver);
 
-        $resolver->setDefaults(array(
+        $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\DisqusBundle\Entity\WidgetDisqus',
             'widget'             => 'disqus',
-            'translation_domain' => 'victoire'
-        ));
+            'translation_domain' => 'victoire',
+        ]);
     }
 
     /**
-     * get form name
+     * get form name.
      *
      * @return string The name of the form
      */
