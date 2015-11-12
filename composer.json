@@ -1,24 +1,40 @@
 {
-    "name": "friendsofvictoire/disqus-widget",
-    "type": "symfony-bundle",
-    "description": "Victoire Cms Disqus widget",
-    "keywords": ["DCMS", "Victoire", "widget", "FriendsofVictoire", "FoV", "Dynamic", "CMS", "Disqus"],
-    "homepage": "http://victoire.io",
-    "license": "MIT",
-    "authors": [
+    "name"             : "friendsofvictoire/disqus-widget",
+    "type"             : "symfony-bundle",
+    "description"      : "Victoire Cms Disqus widget",
+    "keywords"         : [
+        "DCMS",
+        "Victoire",
+        "widget",
+        "FriendsofVictoire",
+        "FoV",
+        "Dynamic",
+        "CMS",
+        "Disqus"
+    ],
+    "homepage"         : "http://victoire.io",
+    "license"          : "MIT",
+    "authors"          : [
         {
-            "name": "Paul Andrieux",
+            "name" : "Paul Andrieux",
             "email": "paul@victoire.io"
         }
     ],
-    "require": {
-        "php"                      : ">=5.3.3",
-        "symfony/framework-bundle" : "~2.3",
-        "victoire/victoire"        : "~1.3.0"
+    "require"          : {
+        "php"                     : ">=5.3.3",
+        "symfony/framework-bundle": "~2.3",
+        "victoire/victoire"       : "~1.3.0"
     },
-    "autoload": {
-        "psr-0": { "Victoire\\Widget\\DisqusBundle": "" }
+    "autoload"         : {
+        "psr-0": {
+            "Victoire\\Widget\\DisqusBundle": ""
+        }
     },
     "minimum-stability": "dev",
-    "target-dir": "Victoire/Widget/DisqusBundle"
+    "target-dir"       : "Victoire/Widget/DisqusBundle",
+    "extra"            : {
+        "branch-alias": {
+            "dev-master": "1.3.x-dev"
+        }
+    }
 }
