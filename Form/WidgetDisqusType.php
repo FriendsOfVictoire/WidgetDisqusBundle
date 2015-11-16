@@ -42,7 +42,7 @@ class WidgetDisqusType extends WidgetType
 
         $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\DisqusBundle\Entity\WidgetDisqus',
-            'widget'             => 'disqus',
+            'widget'             => 'Disqus',
             'translation_domain' => 'victoire',
         ]);
     }
