@@ -3,6 +3,7 @@
 namespace Victoire\Widget\DisqusBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Victoire\Bundle\CoreBundle\Annotations as VIC;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
@@ -16,6 +17,7 @@ class WidgetDisqus extends Widget
     /**
      * @var string
      *
+     * @VIC\ReceiverProperty("textable")
      * @ORM\Column(name="disqus_shortname", type="string", length=255)
      */
     protected $disqusShortname;
