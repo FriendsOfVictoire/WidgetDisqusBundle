@@ -3,8 +3,8 @@
 namespace Victoire\Widget\DisqusBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Victoire\Bundle\WidgetBundle\Entity\Widget;
 use Victoire\Bundle\CoreBundle\Annotations as VIC;
+use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
  * WidgetDisqus.
