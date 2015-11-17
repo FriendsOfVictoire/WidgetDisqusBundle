@@ -1,4 +1,5 @@
 <?php
+
 namespace Victoire\Widget\DisqusBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
@@ -22,9 +23,9 @@ class WidgetDisqus extends Widget
     /**
      * To String function
      * Used in render choices type (Especially in VictoireWidgetRenderBundle)
-     * //TODO Check the generated value and make it more consistent
+     * //TODO Check the generated value and make it more consistent.
      *
-     * @return String
+     * @return string
      */
     public function __toString()
     {
@@ -32,7 +33,7 @@ class WidgetDisqus extends Widget
     }
 
     /**
-     * Set disqusShortname
+     * Set disqusShortname.
      *
      * @param string $disqusShortname
      */
@@ -44,7 +45,7 @@ class WidgetDisqus extends Widget
     }
 
     /**
-     * Get disqusShortname
+     * Get disqusShortname.
      *
      * @return string
      */
@@ -52,5 +53,4 @@ class WidgetDisqus extends Widget
     {
         return $this->disqusShortname;
     }
-
 }

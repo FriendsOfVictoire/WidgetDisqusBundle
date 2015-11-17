@@ -10,7 +10,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 /**
  * @author Paul Andrieux
  */
-class VictoireWidgetDisqusExtension extends Extension
+class Configuration extends Extension
 {
     /**
      * (non-PHPdoc).

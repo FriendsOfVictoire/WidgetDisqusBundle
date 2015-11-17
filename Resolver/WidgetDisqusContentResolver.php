@@ -2,7 +2,6 @@
 
 namespace Victoire\Widget\DisqusBundle\Resolver;
 
-use Symfony\Component\HttpFoundation\RequestStack;
 use Victoire\Bundle\WidgetBundle\Model\Widget;
 use Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver;
 
@@ -16,14 +15,13 @@ class WidgetDisqusContentResolver extends BaseWidgetContentResolver
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function getWidgetStaticContent(Widget $widget)
     {
         $parameters = parent::getWidgetStaticContent($widget);
 
-        if(!array_key_exists("disqusShortname", $parameters) || $parameters['disqusShortname'] == null)
-        {
+        if (!array_key_exists('disqusShortname', $parameters) || $parameters['disqusShortname'] == null) {
             $parameters['disqusShortname'] = $this->disqusName;
         }
 
