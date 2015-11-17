@@ -1,9 +1,7 @@
 <?php
-
 namespace Victoire\Widget\DisqusBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Victoire\Bundle\CoreBundle\Annotations as VIC;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
@@ -17,17 +15,16 @@ class WidgetDisqus extends Widget
     /**
      * @var string
      *
-     * @VIC\ReceiverProperty("textable")
-     * @ORM\Column(name="disqus_shortname", type="string", length=255)
+     * @ORM\Column(name="disqus_shortname", type="string", length=255, nullable=true)
      */
     protected $disqusShortname;
 
     /**
      * To String function
      * Used in render choices type (Especially in VictoireWidgetRenderBundle)
-     * //TODO Check the generated value and make it more consistent.
+     * //TODO Check the generated value and make it more consistent
      *
-     * @return string
+     * @return String
      */
     public function __toString()
     {
@@ -35,7 +32,7 @@ class WidgetDisqus extends Widget
     }
 
     /**
-     * Set disqusShortname.
+     * Set disqusShortname
      *
      * @param string $disqusShortname
      */
@@ -47,7 +44,7 @@ class WidgetDisqus extends Widget
     }
 
     /**
-     * Get disqusShortname.
+     * Get disqusShortname
      *
      * @return string
      */
@@ -55,4 +52,5 @@ class WidgetDisqus extends Widget
     {
         return $this->disqusShortname;
     }
+
 }
