@@ -2,22 +2,33 @@
 
 namespace Victoire\Widget\DisqusBundle\DependencyInjection;
 
-use Symfony\Component\Config\Definition\Builder\TreeBuilder;
-use Symfony\Component\Config\Definition\ConfigurationInterface;
+use Symfony\Component\Config\FileLocator;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Loader;
+use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 /**
  * @author Paul Andrieux
  */
-class Configuration implements ConfigurationInterface
+class Configuration extends Extension
 {
     /**
-     * {@inheritdoc}
+     * (non-PHPdoc).
+     *
+     * @see \Symfony\Component\DependencyInjection\Extension\ExtensionInterface::load()
      */
-    public function getConfigTreeBuilder()
+    public function load(array $configs, ContainerBuilder $container)
     {
-        $treeBuilder = new TreeBuilder();
-        $treeBuilder->root('victoire_widget_disqus');
+        $configuration = new Configuration();
+        $config = $this->processConfiguration($configuration, $configs);
 
-        return $treeBuilder;
+        foreach ($config as $key => $value) {
+            $container->setParameter(
+                'victoire_widget_disqus.'.$key, $value
+            );
+        }
+
+        $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader->load('services.yml');
     }
 }
