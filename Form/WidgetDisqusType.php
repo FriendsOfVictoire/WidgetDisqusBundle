@@ -22,12 +22,6 @@ class WidgetDisqusType extends WidgetType
     {
         $mode = $options['mode'];
 
-        //choose form mode
-        if ($mode === Widget::MODE_STATIC) {
-            //if no entity is given, we generate the static form
-            $builder->add('disqusShortname');
-        }
-
         parent::buildForm($builder, $options);
     }
 
