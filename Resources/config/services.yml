@@ -1,5 +1,5 @@
 services:
-    victoire_core.widget_articlelist.content_resolver:
+    victoire_core.widget_disqus.content_resolver:
         class: Victoire\Widget\DisqusBundle\Resolver\WidgetDisqusContentResolver
         parent: victoire_widget.base_widget_content_resolver
         arguments:
