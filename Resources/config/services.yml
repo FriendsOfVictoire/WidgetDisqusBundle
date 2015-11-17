@@ -1,6 +1,9 @@
 services:
-    victoire_core.widget_disqus_content_resolver:
-        class: Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver
+    victoire_core.widget_articlelist.content_resolver:
+        class: Victoire\Widget\DisqusBundle\Resolver\WidgetDisqusContentResolver
+        parent: victoire_widget.base_widget_content_resolver
+        arguments:
+            - "%victoire_widget_disqus.disqus_name%"
         tags:
             - { name: victoire_widget.widget_content_resolver, alias: Disqus }
     #alias to the entity
