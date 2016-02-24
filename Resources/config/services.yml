@@ -6,11 +6,11 @@ services:
             - "%victoire_widget_disqus.disqus_name%"
         tags:
             - { name: victoire_widget.widget_content_resolver, alias: Disqus }
-    #alias to the entity
+
     victoire.widget.disqus:
         class: Victoire\Widget\DisqusBundle\Entity\WidgetDisqus
-    #alias to the form
+
     victoire.widget.form.disqus:
         class: Victoire\Widget\DisqusBundle\Form\WidgetDisqusType
         tags:
-            - { name: form.type , alias: victoire_widget_form_disqus }
+            - { name: form.type }

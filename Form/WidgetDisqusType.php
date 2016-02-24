@@ -3,13 +3,9 @@
 namespace Victoire\Widget\DisqusBundle\Form;
 
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
-use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
-/**
- * WidgetDisqus form type.
- */
 class WidgetDisqusType extends WidgetType
 {
     /**
@@ -20,34 +16,20 @@ class WidgetDisqusType extends WidgetType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $mode = $options['mode'];
-
         parent::buildForm($builder, $options);
     }
 
     /**
-     * bind form to WidgetDisqus entity.
-     *
-     * @param OptionsResolverInterface $resolver
+     * {@inheritdoc}
      */
-    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    public function configureOptions(OptionsResolver $resolver)
     {
-        parent::setDefaultOptions($resolver);
+        parent::configureOptions($resolver);
 
         $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\DisqusBundle\Entity\WidgetDisqus',
             'widget'             => 'Disqus',
             'translation_domain' => 'victoire',
         ]);
-    }
-
-    /**
-     * get form name.
-     *
-     * @return string The name of the form
-     */
-    public function getName()
-    {
-        return 'victoire_widget_form_disqus';
     }
 }
