@@ -16,41 +16,40 @@ class WidgetDisqus extends Widget
     /**
      * @var string
      *
-     * @ORM\Column(name="disqus_shortname", type="string", length=255, nullable=true)
+     * @ORM\Column(name="shortname", type="string", length=255, nullable=true)
      */
-    protected $disqusShortname;
+    protected $shortname;
 
     /**
      * To String function
      * Used in render choices type (Especially in VictoireWidgetRenderBundle)
-     * //TODO Check the generated value and make it more consistent.
      *
      * @return string
      */
     public function __toString()
     {
-        return '#'.$this->id.' - '.$this->id;
+        return '#Disqus - '.$this->id;
     }
 
     /**
-     * Set disqusShortname.
+     * Set shortname.
      *
-     * @param string $disqusShortname
+     * @param string $shortname
      */
-    public function setDisqusshortname($disqusShortname)
+    public function setShortname($shortname)
     {
-        $this->disqusShortname = $disqusShortname;
+        $this->shortname = $shortname;
 
         return $this;
     }
 
     /**
-     * Get disqusShortname.
+     * Get shortname.
      *
      * @return string
      */
-    public function getDisqusshortname()
+    public function getShortname()
     {
-        return $this->disqusShortname;
+        return $this->shortname;
     }
 }

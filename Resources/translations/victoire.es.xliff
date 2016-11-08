@@ -14,8 +14,8 @@
         <source>modal.form.widget.type.disqus.label</source>
         <target>Disqus</target>
       </trans-unit>
-      <trans-unit resname="widget_disqus.form.disqusShortname.label">
-        <source>widget_disqus.form.disqusShortname.label</source>
+      <trans-unit resname="widget_disqus.form.shortname.label">
+        <source>widget_disqus.form.shortname.label</source>
         <target>Nombre de la discusión</target>
       </trans-unit>
     </body>
