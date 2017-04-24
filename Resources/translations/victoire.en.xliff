@@ -6,15 +6,15 @@
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
     </header>
     <body>
-      <trans-unit resname="widget.disqus.new.action.label">
+      <trans-unit id="1" resname="widget.disqus.new.action.label">
         <source>widget.disqus.new.action.label</source>
         <target>Disqus</target>
       </trans-unit>
-      <trans-unit resname="modal.form.widget.type.disqus.label">
+      <trans-unit id="2" resname="modal.form.widget.type.disqus.label">
         <source>modal.form.widget.type.disqus.label</source>
         <target>Disqus</target>
       </trans-unit>
-      <trans-unit resname="widget_disqus.form.shortname.label">
+      <trans-unit id="3" resname="widget_disqus.form.shortname.label">
         <source>widget_disqus.form.shortname.label</source>
         <target>Name of the discussion</target>
       </trans-unit>
